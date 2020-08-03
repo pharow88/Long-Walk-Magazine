@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,100&display=swap');*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+
+.hero {
+	width: 100%;
+	height: 100vh;
+	background: url("images/background.png") center no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.sub-headline{
+	font-size: 5.4rem;
+	font-family: "Lato", sans-serif;
+	color: #fda55c;
+	font-weight: 50;
+	line-height: 1;
+	letter-spacing: 3px;
+	opacity: 0;
+	animation: fadeUp .5s forwards;
+	animation-delay: .5s;
+
+
+}
+
+/* ANIMATIONS FOR MAIN WEBSITE*/
+
+@keyframes fadeUp{
+	0%{
+		transform: translateY(4rem);
+	}
+	100%{
+		opacity: 1;
+		transform: translateY(0rem);
+
+	}
+}
